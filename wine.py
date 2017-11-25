@@ -1,8 +1,8 @@
 # -*- coding: utf-8 -*-
-from LineAlpha import LineClient
-from LineAlpha.LineApi import LineTracer
-from LineAlpha.LineThrift.ttypes import Message
-from LineAlpha.LineThrift.TalkService import Client
+from wine import LineClient
+from wine.LineApi import LineTracer
+from wine.LineThrift.ttypes import Message
+from wine.LineThrift.TalkService import Client
 import time, datetime, random ,sys, re, string, os, json, requests, urllib
 
 reload(sys)
