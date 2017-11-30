@@ -102,40 +102,40 @@ def NOTIFIED_ACCEPT_GROUP_INVITATION(op):
 
 tracer.addOpInterrupt(17,NOTIFIED_ACCEPT_GROUP_INVITATION)
 
-def NOTIFIED_KICKOUT_FROM_GROUP(op):
-    try:
+#def NOTIFIED_KICKOUT_FROM_GROUP(op):
+#    try:
 #				client.kickoutFromGroup(op.param1,[op.param2])
 #				client.inviteIntoGroup(op.param1,[op.param3])
-				sendMessage(op.param1, client.getContact(op.param2).displayName + ", โชคดีนะ แล้วพบกันใหม่ นะ\n (*´･ω･*)")				
-    except Exception as e:
-        print e
-        print ("\n\nNOTIFIED_KICKOUT_FROM_GROUP\n\n")
-        return
+#				sendMessage(op.param1, client.getContact(op.param2).displayName + ", โชคดีนะ แล้วพบกันใหม่ นะ\n (*´･ω･*)")				
+#    except Exception as e:
+#        print e
+#        print ("\n\nNOTIFIED_KICKOUT_FROM_GROUP\n\n")
+#        return
+#
+#tracer.addOpInterrupt(19,NOTIFIED_KICKOUT_FROM_GROUP)
 
-tracer.addOpInterrupt(19,NOTIFIED_KICKOUT_FROM_GROUP)
-
-def NOTIFIED_UPDATE_GROUP(op):
-    try:
-                sendMessage(op.param1, client.getContact(op.param2).displayName + ", โชคดีนะ แล้วพบกันใหม่ นะ\n (*´･ω･*) ")
+#def NOTIFIED_UPDATE_GROUP(op):
+#    try:
+#                sendMessage(op.param1, client.getContact(op.param2).displayName + ", โชคดีนะ แล้วพบกันใหม่ นะ\n (*´･ω･*) ")
 #                client.kickoutFromGroup(op.param1,[op.param2])
-    except Exception as e:
-        print e
-        print ("\n\nNOTIFIED_UPDATE_GROUP\n\n")
-        return
+#    except Exception as e:
+#        print e
+#        print ("\n\nNOTIFIED_UPDATE_GROUP\n\n")
+#        return
+#
+#tracer.addOpInterrupt(11,NOTIFIED_UPDATE_GROUP)
 
-tracer.addOpInterrupt(11,NOTIFIED_UPDATE_GROUP)
-
-def NOTIFIED_CANCEL_INVITATION_GROUP(op):
-    try:
-                sendMessage(op.param1, client.getContact(op.param2).displayName + ", โชคดีนะ แล้วพบกันใหม่ นะ\n (*´･ω･*) ")
+#def NOTIFIED_CANCEL_INVITATION_GROUP(op):
+#    try:
+#                sendMessage(op.param1, client.getContact(op.param2).displayName + ", โชคดีนะ แล้วพบกันใหม่ นะ\n (*´･ω･*) ")
 #                client.kickoutFromGroup(op.param1,[op.param2])
 #                client.inviteIntoGroup(op.param1,[op.param3])
-    except Exception as e:
-        print e
-        print ("\n\nNOTIFIED_CANCEL_INVITATION_GROUP\n\n")
-        return
-
-tracer.addOpInterrupt(32,NOTIFIED_CANCEL_INVITATION_GROUP)
+#    except Exception as e:
+#        print e
+#        print ("\n\nNOTIFIED_CANCEL_INVITATION_GROUP\n\n")
+#        return
+#
+#tracer.addOpInterrupt(32,NOTIFIED_CANCEL_INVITATION_GROUP)
 
 #def CANCEL_INVITATION_GROUP(op):
 #    try:
