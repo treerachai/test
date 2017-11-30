@@ -358,7 +358,7 @@ def SEND_MESSAGE(op):
                                 sendMessage(msg.to, "รายการคัคลอกข้อมูลสำเร็จ ~")
                             except Exception as e:
                                 print e    
-                elif msg.text in ["สำรองข้อมูล","backup"]:
+                elif msg.text in ["สำรองข้อมูล"]:
                     try:
                         client.updateDisplayPicture(backup.pictureStatus)
                         client.updateProfile(backup)
