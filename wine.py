@@ -211,7 +211,7 @@ def SEND_MESSAGE(op):
                     else: md += "\nสมาชิก: " + str(len(group.members)) + "คน\nเชิญ: " + str(len(group.invitee)) + "คน"
                     sendMessage(msg.to,md)
                 if msg.text in ["คำสั่ง","Help","help"]:
-                    sendMessage(msg.to,"¤ คำสั่งเซลบอท¤\n\n¤ ฉัน\n¤ รหัส\n¤ เช็คความเร็ว\n¤ กลุ่ม\n¤ รหัสกลุ่ม\n¤ ข้อมูลกลุ่ม\n¤ ขอลิ้งค์\n¤ เปิดลิ้ง\n¤ ปิดลิ้ง\n¤ แท็ก\n¤ นับ\n¤ อ่าน\n¤ คัดลอกข้อมูล @\n¤ สำรองข้อมูล\n¤ บล็อก @\n¤ รายการบล็อก")
+                    sendMessage(msg.to,"¤ คำสั่งเซลบอท¤\n\n¤ ฉัน\n¤ รหัส\n¤ เช็คความเร็ว\n¤ กลุ่ม\n¤ รหัสกลุ่ม\n¤ ข้อมูลกลุ่ม\n¤ ขอลิ้งค์\n¤ เปิดลิ้งค์\n¤ ปิดลิ้งค์\n¤ แท็ก\n¤ นับ\n¤ อ่าน\n¤ คัดลอกข้อมูล @\n¤ สำรองข้อมูล\n¤ บล็อก @\n¤ รายการบล็อก")
                 if msg.text in ["เช็คความเร็ว","Speed","speed"]:
                     start = time.time()
                     sendMessage(msg.to, text="โปรดรอสักครู่.....", contentMetadata=None, contentType=None)
